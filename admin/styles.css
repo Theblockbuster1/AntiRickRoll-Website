@@ -1,0 +1,9 @@
+a:link { color:#000066; text-decoration:none; font-weight:normal; }
+a:hover { color:#9900CC; text-decoration:none; font-weight:normal; }
+a:visited { color:#6600FF; text-decoration:none; font-weight:normal; }
+a:active { color:#000066; text-decoration:none; font-weight:normal; }
+body { color:#000000; background:#FFFFFF; scrollbar-face-color:#0000FF; scrollbar-highlight-color:#FFFFFF; scrollbar-3dlight-color:#FFFFFF; scrollbar-darkshadow-color:#000000; scrollbar-arrow-color:#FFFFFF; scrollbar-track-color:#0099CC; font-size:11pt; font-family:Verdana; }
+input { font-size:11pt; font-family:Verdana; }
+textarea { font-size:11pt; font-family:Verdana; }
+select { font-size:11pt; font-family:Verdana; }
+td { font-size:11pt; font-family:Verdana; }

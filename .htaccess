@@ -1,0 +1,31 @@
+AddType x-mapp-php5 .php
+
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteCond %{QUERY_STRING} union [NC,OR]
+RewriteCond %{QUERY_STRING} select [NC,OR]
+RewriteCond %{QUERY_STRING} truncate [NC,OR]
+RewriteCond %{QUERY_STRING} drop [NC,OR]
+RewriteCond %{QUERY_STRING} update [NC]
+RewriteRule .* %{REQUEST_URI}? [R,L]
+
+RewriteRule ^add-url$   ./create_url.php [L]
+RewriteRule ^([0-9]+)$   ./view_url.php?id=$1 [L]
+RewriteRule ^recent$   ./index.php?act=recent [L]
+RewriteRule ^popular$   ./index.php?act=popular [L]
+RewriteRule ^add$   ./add_url.php [L]
+RewriteRule ^page([0-9]+)$   ./index.php?next=$1 [L]
+RewriteRule ^remove$   ./remove.php [L]
+RewriteRule ^all$   ./all.php [L]
+RewriteRule ^download$   ./download.php [L]
+RewriteRule ^api$   ./api.php?%1 [L,QSA]
+RewriteRule ^search$   ./search.php?%1 [L,QSA]
+
+ErrorDocument 404 http://%{HTTP_HOST}
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php56” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php56 .php .php5 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

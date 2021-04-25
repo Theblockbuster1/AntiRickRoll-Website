@@ -1,0 +1,67 @@
++----------------------------+
+| ETI AddUrl PHP Script 0.1v |
++----------------------------+                                                     
+          www.eti.pw
+
+
+System Requirements: 
+
+Linux OS, Apache, MySQL, PHP5.5 or PHP5.6 (under php7 didn't work:)
+phpMyAdmin is good idea :)
+
+How to Install?
+
+Steps about installing:
+
+1. Just copy&paste directory/folder add.url.ph to your localhost (your webserver) ... or just copy all files and paste where you want in webserver directory :) you can change folder name too if you want ...
+Give writable rights to these 2 files: iplog.txt and log.html
+
+...or upload all files to any (free) shared hosting via FTP client (like bareFTP, FilezZilla) ...
+
+Settings:
+In directory  /inc  there is config.php file ...
+Change it with your own settings ...
+
+Open addurl.sql file and change 40 row with own name for admin(admin name) and own password, but the pass must be in md5 (this is cryptographic)  ... 
+Go to this website: http://tools.eti.pw/md5.php
+and generate own string ... just write your password with words and click on button generate, and take the string, then copy/paste to this 40 row in .sql file :)
+
+How to access the Admin Panel?
+
+http://localhost/add.url.ph/admin
+http://yourdomain/admin
+
+Your admin name on default now is:
+addurladminname
+
+And the password is:
+add.url.com/foryou:)
+
+If you want change admin/pass , then edit 40 row in .sql file!
+
+From phpmyadmin you will Import this addurl.sql file and that's all ...
+
+To delete ETI logo on the bottom (footer) -> go to footer.php file and edit it:)
+
+
+2. You must go to 'shrink the web' website: shrinktheweb.com  , and to get your own key for webthumbnails generator about the pictures... u can't use my key, because I specified my IP and domains :) and there is limit about this web snaps ... pagepeeker.com is not good idea :) just use shrinktheweb.com
+
+
+How to work with this script under PHP7 ?
+
+This simple php script didn't work properly under php7 :) old code, sorry ...
+If your operating system use PHP7 PHP7.1 and you want to work with PHP5.6 , then read this tut: 
+http://askubuntu.com/questions/761713/how-can-i-downgrade-from-php-7-to-php-5-6-on-ubuntu-16-04
+
+You will be able to work with PHP7 and PHP5 ... 
+
+In shared hostings there is 'PHP Manager version control' and you must change it to PHP5 and not PHP7 ... 
+
+
+How to get free domain?
+
+Get from: freenom.com
+
+About the License: No such! You can do it what you want - to modify it, sell it and so on!
+
+Bye :P
